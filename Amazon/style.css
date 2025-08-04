@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+.box-1{
+    height: 50px;
+    padding: 3px 2px 2px 2px;
+}
+.box-1:hover{
+    outline: 1px solid white;
+}
+
+.box-2{
+    
+    display: flex;
+    align-items: center;
+    gap: 2px;
+   
+    height: 50px;
+    padding: 0 3px 0 3px;
+}
+.box-2:hover{
+    outline: 1px solid white;
+}
+
+.location-1{
+    color: white;
+    padding: 7px 0px 1px 0px;
+}
+.location-2{
+    color: white;
+    
+}
+.location-2 > .loca-data-1 {
+    font-size: 12px;
+    color: #cccccc;
+}
+.location-2 > .loca-data-2 {
+    font-size: 14px;
+    padding: 0 0 1px;
+    
+}
+
+.box-3{
+    display: flex;
+    align-items: center;
+   
+    width: 50%;
+    
+    
+
+}
+
+.box-3  select{
+    padding: 10px 6px;
+    height: 45px;
+    width: 50px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(236,236,236);
+}
+.box-3 select:focus{
+    outline: 2px solid #ff9900;
+}
+
+.box-3 select:hover{
+    background-color: rgb(216,216,216);
+    cursor: pointer;
+}
+.box-3 input {
+    width: 90%;
+    height: 45px;
+    background-color: white;
+    padding: 11px 10px;
+    align-self: center;
+    font-size: 23px;
+    border: none;
+}
+.box-3 input:focus{
+    outline: 2px solid #ff9900;
+}
+
+.box-3 .btn{
+    background-color: #f3a837;
+    
+    padding: 9.5px 11px;
+    width: 42px;
+    border-radius: 0 5px 5px 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+.box-3 .btn:hover{
+    cursor: pointer;
+    background-color: #f19307f5;
+}
+.box-3 .btn:active{
+    outline: 2px solid #ff9900;
+}
+.box-4{
+    display: flex;
+    align-items: flex-end;
+    /* border: 2px solid blue; */
+    color: white;
+    /* height: 50px; */
+    /* padding: 0px 4px 3px 5px; */
+    cursor: pointer;
+}
+.box-4 .lang{
+    
+    height: 48px;
+    padding: 19px 3px 3px 3px;
+
+}
+.box-4 .lang:hover{
+    outline: 1px solid white;
+}
+.box-4 .arrow-1{
+    /* border: 2px solid gray; */
+    height: 48px;
+    font-size: 12px;
+    padding: 25px 3px 3px 2px;
+    color: gray;
+}
+
+.box-5{
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+   
+    cursor: pointer;
+}
+.box-5 .login{
+    
+    height: 48px;
+    padding: 5px 7px 0px 7px;
+    
+}
+.box-5 .login .loca-data-3{
+   font-size: 13px;
+    color: rgb(227, 224, 224);
+    
+}
+.box-5 .login .loca-data-4{
+   font-size: 17px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.box-5 .arrow-2{
+    font-size: 12px;
+    padding: 0 0 6px 2px;
+    color: gray;
+}
+.box-5 .login:hover{
+    outline: 1px solid white;
+}
+.box-6{
+    color: white;
+   
+    height: 48px;
+    padding: 5px 7px 0px 7px;
+
+}
+.box-6  .loca-data-5{
+    font-size: 13px;
+    color: rgb(227, 224, 224);
+}
+.box-6  .loca-data-6{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.box-6:hover{
+    outline: 1px solid white;
+}
+.box-7{
+    color: white;
+    
+    height: 47px;
+    padding: 9px 7px 0px 7px;
+    cursor: pointer;
+}
+
+.box-7 .cart i{
+    font-size: 28px;
+}
+.box-7:hover{
+    outline: 1px solid white;
+}
+.ALL{
+    margin-top: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #232F3E;
+    justify-content: space-around;
+    /* font-size: 14px; */
+}
+
+.ALL > div{
+    height: 45px;
+    align-content: center;
+    padding: 0 3px 0 3px;
+}
+.ALL > div:hover{
+    outline: 1px solid white;
+}
+.ALL .fre{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.ALL .fre #Fresh{
+    height: 45px;
+    
+    align-content: center;
+    padding: 0 3px 0 3px;
+}
+.ALL .fre:hover {
+    outline: none;
+}
+.ALL .fre #Fresh:hover{
+    outline: 1px solid white;
+}
+.arrow-3 i{
+    color: gray;
+    font-size: 13px;
+}
+
+.body{
+    background-image: url(body.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 600px;
+    background-color: #E3E6E6;
+    
+   
+}
+body{
+    background-color: #E3E6E6;
+}
+.body{
+    padding-top: 250px;
+}
+.body > .boxes{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    padding: 0 19px;
+
+}
+
+.body > .boxes > .box1{
+    
+    background-color: white;
+    width: 25%;
+    height: 420px;
+
+}
+.body > .boxes > .box1  .home{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 19px;
+    padding: 10px 10px 10px 10px;
+    
+}
+.box1 .home .home1:hover{
+    cursor: pointer;
+}
+.box1 .home .home2:hover{
+    cursor: pointer;
+}
+.box1 .home .home3:hover{
+    cursor: pointer;
+}
+.box1 .home .home4:hover{
+    cursor: pointer;
+}
+.box1 h1{
+    padding: 19px 0 0 21px;
+    font-size: 24px;
+}
+.box1 p{
+    padding: 2px;
+}
+.box1 a{
+    
+    padding:5px 0 0 19px ;
+    
+    text-decoration: none;
+    color: blue;
+}
+.home p{
+    font-size: 14px;
+}
+.body > .boxes > .box2{
+    background-color: white;
+    width: 25%;
+    height: 420px;
+
+}
+.body > .boxes > .box2 > .deals{
+    
+    padding:10px 0 0 19px ;
+}
+.body > .boxes > .box2 > .deals > img{
+    cursor: pointer;
+}
+.box2 h1{
+    padding: 19px 0 0 21px;
+    font-size: 24px;
+}
+.box2 a{
+    padding:30px 0 0 19px ;
+    text-decoration: none;
+    color: blue;
+}
+.body > .boxes > .box3{
+    background-color: white;
+    width: 25%;
+    height: 420px;
+
+}
+
+.body > .boxes > .box3 > .mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px 10px 10px 10px;
+}
+
+.body > .boxes > .box3 > .mobile > .mobile1{
+    cursor: pointer;
+}
+.body > .boxes > .box3 > .mobile > .mobile2{
+    cursor: pointer;
+}
+.body > .boxes > .box3 > .mobile > .mobile3{
+    cursor: pointer;
+}
+.body > .boxes > .box3 > .mobile > .mobile4{
+    cursor: pointer;
+}
+
+.body > .boxes > .box3 h1{
+    padding: 19px 0 0 21px;
+    font-size: 24px;
+}
+.body > .boxes > .box3 p{
+    
+    font-size: 14px;
+
+}
+.box3 a{
+    padding:30px 0 0 19px ;
+    text-decoration: none;
+    color: blue;
+}
+.body > .boxes > .box4{
+    background-color: white;
+    width: 25%;
+    height: 420px;
+
+}
+
+.body > .boxes > .box4 > .toys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px 10px 10px 10px;
+}
+
+.body > .boxes > .box4 > .toys p{
+    font-size: 14px;
+}
+.body > .boxes > .box4 h1{
+    padding: 19px 0 0 21px;
+    font-size: 24px;
+}
+
+.body > .boxes > .box4 a{
+    padding:30px 0 0 19px ;
+    text-decoration: none;
+    color: blue;
+}
+
+.body > .boxes > .box4 > .toys > .toys1{
+    cursor: pointer;
+
+}
+.body > .boxes > .box4 > .toys > .toys2{
+    cursor: pointer;
+
+}
+.body > .boxes > .box4 > .toys > .toys3{
+    cursor: pointer;
+
+}
+.body > .boxes > .box4 > .toys > .toys4{
+    cursor: pointer;
+
+}
+
+.body > .scroll{
+    padding: 3px 19px;
+    width: 97.5%;
+    background-color: white;
+    height: 270px;
+    margin: 25px 29px 15px 20px;
+   
+    
+}
+.body > .scroll > .items {
+    display: flex;
+   overflow-x: hidden;
+   gap: 5px;
+    
+}
+.body > .scroll > .items:hover{
+     overflow-x: scroll;
+    scroll-behavior: smooth;
+   
+}
+
+.body > .adds{
+    margin: 20px;
+    text-align: center;
+}
+
+.body > .browsing{
+    background-color: white;
+    height: 80vh;
+    width: 99vw;
+    
+}
+
+.body > .browsing > .history{
+    height: 70vh;
+    outline: 1px solid black;
+    margin: 10px 5px 10px 5px;
+}
+
+.body > .browsing > .history > .his-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+
+
+.footer{
+    width: 99vw;
+    height: 110vh;
+    background-color: black;
+}
+.footer input{
+    color: white;
+    width: 99vw;
+    height: 45px;
+    font-size: 14px;
+}
+.footer > .foot1{
+    height: 66vh;
+    background-color: rgb(69, 66, 66);
+
+}
+.footer > .foot1 > .support{
+    display: flex;
+   
+    /* align-items: center; */
+    justify-content: center;
+    gap: 120px;
+    padding: 40px 60px ;
+    
+}
+.footer > .foot1 > .support h2{
+    color: rgb(251, 251, 251);
+    font-size: 22px;
+    padding-bottom: 7px;
+}
+.footer > .foot1 > .support a{
+    color: grey;
+    text-decoration: none;
+}
+.footer > .foot1 > .support a:hover{
+    text-decoration: underline;
+}
+
+.footer > .foot1 > .support  ul{
+    list-style-type: none;
+    
+}
+
+.footer > .foot1 > .support2{
+    padding: 8px 108px;
+    gap: 19px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > .foot1 > .support2 .language , .nation{
+    width: auto;
+    outline: 1px solid white;
+    color: white;
+    padding: 4px 11px 0 4px;
+    border-radius: 4px;
+}
+
+.footer > .foot1 > .support2 .foot-img{
+ 
+    padding: 19px 8px 0 3px;
+}
+.footer > .foot1 > .support2 i{
+    margin: 5px 10px;
+}
+
+      
+    
+
+.footer > .foot1 > .support  ul li{
+   padding: 4px ;
+   gap: 4px;
+}
+
+
+.footer > .foot2 > .list{
+    margin: 10px 150px;
+   font-size: 14px;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 100px; */
+    
+    flex-wrap: wrap
+    ;
+    
+}
+.footer > .foot2  .list div {
+    
+    padding: 10px 50px;
+
+
+}
+.footer > .foot2  .list > div:hover{
+    text-decoration: underline;
+    
+    
+}
+.footer > .foot2  .list div h4{
+    color: white;
+ 
+}
+
+.footer > .foot2  .list div p{
+    color: gray;
+}
+
+.footer > .foot2 .cond{
+   
+    color: white;
+    padding: 3px 500px;
+    
+}
+.footer > .foot2 .cond p a{
+    color: white;
+text-decoration: none;
+padding: 3px 5px;
+}
+
+.footer > .foot2 .cond p a:hover{
+    text-decoration: underline;
+}
+
+.footer > .foot2 .cond p{
+    font-size: 14px;
+}
+.footer > .foot2 .cond #copy{
+    padding: 1px 50px;
+}
