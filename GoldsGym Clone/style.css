@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+/* NAVBAR  */
+.navBar{
+    width: 100%;
+    height: 18.5vh;
+    background-color: blue;
+}
+/* MAIN  */
+.main{
+    width: 100%;
+    height: auto;
+    
+   
+   
+}
+
+/* BOX-1 */
+.Box-1{
+    width: 100%;
+    height: 64vh;
+}
+.Box-1 .img{
+    width: 100%;
+    height: 64vh;
+}
+.Box-1 .img img{
+    width: 100%;
+    height: 64vh;
+}
+
+/* BOX-2 */
+.Box-2{
+   
+    width: 100%;
+    height: 50vh;
+    background-image: url(Images/box-2\ bg.jpg);
+    background-position:100% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Box-2 .text{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.Box-2 .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.Box-2 .boxes .flex{
+    padding-top: 15px;
+    background-color: white;
+    width: 132px;
+    height: 155px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 1px #33333392;
+    
+}
+.Box-2 .boxes .flex img{
+    width: 60px;
+}
+/* BOX-3 */
+.Box-3{
+    width: 100%;
+    height: 70vh;
+   text-align: center;
+   padding-top: 30px;
+    
+}
+.Box-3 h1{
+   font-size:  37px;
+   padding-bottom: 25px;
+}
+.Box-3 .videos{
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+    padding: 0px 200px;
+}
+.Box-3 .videos #video{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 320px;
+    width: 550px;
+    justify-content: center;
+}
+.Box-3 .videos p{
+    font-size: 21.6px;
+    color: #333333;
+     text-align: justify;
+     
+   
+}
+/* BOX-4 */
+.Box-4{
+    width: 100%;
+    height: 63vh;
+    background-image: linear-gradient(rgba(0,57,97,0.7),rgba(0,57,97,0.7)), url(Images/box-4\ bg.jpg);
+    background-position: 50% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.Box-4 > h1{
+    font-size: 45px;
+    color: #ffe400;
+}
+.Box-4 > p{
+    color: white;
+    font-size: 20px;
+}
+
+.Box-4 .types{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.Box-4 .types .flex{
+    width: 560px;
+    height: 260px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 2px 20px;
+    
+}
+
+.Box-4 .types .flex i{
+    font-size: 40px;
+    color:  #f9e603;
+}
+
+.Box-4 .types .flex p{
+    font-size: 22px;
+    text-align: center;
+}
+
+/* BOX-5 */
+.Box-5{
+    width: 100%;
+    height: 35vh;
+    background-image: url(Images/box-5-bg.jpg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Box-5 h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:  #f9e603;
+    padding: 2px 8px;
+    font-size: 36px;
+}
+.Box-5 p{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:  #f9e603;
+    padding: 6px;
+    font-size: 20px;
+}
+
+.Box-5 .button{
+    background-color: #ffe400;
+    cursor: pointer;
+    letter-spacing: 2px;
+    /* font-size: 24px; */
+    padding: 18px;
+    border: 1px solid #ffe400;
+}
+
+/* BOX-6 */
+.Box-6{
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    
+}
+
+.Box-6 .img{
+    width: auto;
+    height: auto;
+}
+.Box-6 .img img{
+    width: 230px;
+    height: auto;
+}
+
+/* BOX-7 */
+.Box-7{
+    width: 100%;
+    height: 98vh;
+    background-image: url(Images/box-7-bg.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.Box-7 h1{
+    font-size: 40px;
+    color: white;
+   
+}
+.Box-7 h1 span{
+    font-size: 42px;
+    color: #f9e603;
+}
+.Box-7 .branch{
+    display: flex;
+    gap: 120px;
+}
+
+.Box-7 .branch .flex{
+    width: 240px;
+    height: 150px;
+    display: flex;
+    padding-top: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.Box-7 .branch .branch2{
+    width: 270px;
+    height: 150px;
+    display: flex;
+    padding-top: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.Box-7 .branch .flex h2{
+    color: white;
+}
+.Box-7 .branch .flex input{
+    width: 170.40px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f9e603;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.Box-7 .branch .flex input:hover{
+    background-color: #333333;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.Box-7 .branch .branch2 input{
+    width: 210px;
+}
+
+
+.Box-7 .location{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 350px;
+    padding-left: 45px;
+}
+
+.Box-7 .location .list p{
+    margin: 7px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    text-indent: 10px;
+
+}
+
+.Box-7 .location .list ul {
+    
+    list-style-type: none;
+     /* word-spacing: 4px; */
+    letter-spacing: 0.5px;
+    line-height: 31px;
+    
+}
+.Box-7 .location .list ul li{
+    margin: 5px;
+    color: #f9e603;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.Box-7 .location img{
+    width: 370px;
+    border-radius: 10px;
+}
+/* BOX-8 */
+.Box-8{
+    width: 100%;
+    height: 199vh;
+    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url(Images/box-8-bg.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll,fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-top: 24px;
+}
+.Box-8 h1{
+    font-size: 45px;
+    color: #333333;
+    text-shadow: 1px 1px 3px #333333;
+}
+.Box-8 > p{
+    width: 69%;
+    text-align: justify;
+    font-size: 20px;
+    color: #333333f8;
+    line-height: 28px;
+    margin-bottom: 20px;
+
+}
+.Box-8 .flex{
+    width: 69%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.Box-8 .flex img{
+    width: 530px;
+}
+.Box-8 .flex img:hover{
+    filter: grayscale(4);
+}
+.Box-8 .flex .text h3{
+    text-align: left;
+    font-size: 22px;
+    color: #333333;
+      line-height: 48px;
+}
+.Box-8 .flex .text p{
+    text-align: left;
+    font-size: 20px;
+    color: #333333f8;
+    line-height: 28px;
+}
+/* BOX-9 */
+.Box-9{
+    width: 100%;
+    height: 69vh;
+    background-image: linear-gradient(rgba(0,57,97,0.7),rgba(0,57,97,0.7)),url(Images/box-9-bg.jpg);
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    padding-top: 47px;
+}
+.Box-9 .heading{
+    text-align: center;
+  
+
+}
+
+.Box-9 .heading h1{
+    font-size: 48px;
+    color: white;
+    span{
+        color: #f9e603;
+    }
+}
+.Box-9 .heading h3{
+    font-size: 24.2px;
+    color: white;
+    line-height: 37px;
+}
+.Box-9 .heading h4{
+    font-size: 20px;
+    color: white;
+    line-height: 35px;
+    font-weight: bolder;
+}
+.Box-9 .mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.Box-9 .mode .flex{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Box-9 .mode .flex img{
+    width: 280px;
+}
+.Box-9 input{
+    width: 160px;
+    height: 37px;
+    background-color: #f9e603;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+/* BOX-10 */
+.Box-10{
+    width: 100%;
+    height: 46vh;
+    background-image: url(Images/box-10-bg.jpg);
+    background-position: 25% 46%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.Box-10 h1{
+    font-size: 40px;
+}
+.Box-10 .text{
+    padding: 10px;
+    width: 70%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 0px 0px 4px 2px rgb(184, 183, 183);
+}
+.Box-10 .text p:nth-child(1){
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-indent: 60px;
+    
+}
+.Box-10 .text p:nth-child(2){
+    margin: 15px;
+    font-size: 16px;
+}
+.Box-10 .text .next .circle{
+        width: 6px;
+        height: 6px;
+        background-color: rgb(112, 109, 109);
+        margin: 10px;
+        border-radius: 50%;
+        align-items: center;
+        display: inline-block;
+        
+    }
+
+/* BOX-11 */
+.Box-11{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/box-11-bg.jpg);
+    background-position: 170% 20%;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-attachment: scroll;
+  
+}
+
+/* BOX-12 */
+.Box-12{
+    width: 100%;
+    height: 18vh;
+    background-color: #f9e603;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 150px;
+    text-align: center;
+
+}
+
+.Box-12 #text h1{
+    font-size:32px ;
+    font-weight: 100;
+    color: #333333;
+    
+}
+.Box-12 #text p{
+    font-size:20px ;
+    padding: 10px;
+   
+
+    
+}
+
+.Box-12 #trial{
+    background-color: black;
+    color: #f9e603;
+    padding: 15px;
+    
+}
+
+.Box-12 #trial h1{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 92.2vh;
+    background-image: linear-gradient(0deg, rgb(27 26 27 / 53%), rgb(0 0 0 / 68%)), url(Images/footer-bg.jpg);
+    background-position: 50% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
