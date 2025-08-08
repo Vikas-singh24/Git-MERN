@@ -6,7 +6,7 @@
 .navBar{
     width: 100%;
     height: 18.5vh;
-    background-color: #0692e3bd;
+    background-color:#01adf0;
     
 }
  /* NAV-1 */
@@ -63,6 +63,7 @@
     justify-content: left;
     padding: 2px 30px;
     gap: 200px;
+    
    
 }
 
@@ -105,6 +106,20 @@ outline: 1px dotted rgb(254, 174, 188);
     font-size: 10px;
     margin: 0px 4px;
 }
+.navBar .nav2 .info ul .arrow:hover{
+    outline: 1px dotted rgb(254, 174, 188);
+    
+    span{
+
+        animation: rotation 0.5s forwards;
+    }
+}
+
+
+
+
+
+
 .navBar .nav2 .info ul .Trial{
     height: 87px;
     width: 98px;
@@ -140,6 +155,7 @@ outline: 1px dotted rgb(254, 174, 188);
 .Box-1{
     width: 100%;
     height: 64vh;
+    cursor: pointer;
 }
 .Box-1 .img{
     width: 100%;
@@ -149,6 +165,42 @@ outline: 1px dotted rgb(254, 174, 188);
     width: 100%;
     height: 64vh;
 }
+
+
+
+.Box-1 .prev ,.Box-1 .next{
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    width:46px;
+    height: 46px;
+    border-radius: 50%;
+    line-height: 45px;
+   
+    padding: 3px 14px 7px 14px;
+    color: #01adf0;
+    font-weight: bold;
+    font-size: 33px;
+    transition: 0.6s ease;
+    
+    user-select: none;
+    border: 1px solid #01adf0;
+    opacity: 1;
+
+}
+
+.Box-1 .prev{
+    left: 18px;
+    
+}
+.Box-1 .next{
+    right: 18px;
+   
+}
+
+
+
 
 /* BOX-2 */
 .Box-2{
@@ -284,6 +336,14 @@ outline: 1px dotted rgb(254, 174, 188);
     text-align: center;
 }
 
+.Box-4 .types .flex:hover{
+    cursor: pointer;
+  
+    transform: scale(1.1,1.1);
+    transition: 0.5s ;
+}
+
+
 /* BOX-5 */
 .Box-5{
     width: 100%;
@@ -319,6 +379,10 @@ outline: 1px dotted rgb(254, 174, 188);
     /* font-size: 24px; */
     padding: 18px;
     border: 1px solid #ffe400;
+    position: relative;
+    /* right: -500px; */
+    transition: 1s;
+    
 }
 
 /* BOX-6 */
@@ -435,11 +499,14 @@ outline: 1px dotted rgb(254, 174, 188);
     color: white;
     font-weight: bolder;
     text-indent: 10px;
+    position: relative;
+    animation: rightside 0.8s forwards    ;
 
 }
 
 .Box-7 .location .list ul {
-    
+    position: relative;
+    animation: rightside 1s forwards    ;
     list-style-type: none;
      /* word-spacing: 4px; */
     letter-spacing: 0.5px;
@@ -455,6 +522,9 @@ outline: 1px dotted rgb(254, 174, 188);
 .Box-7 .location img{
     width: 370px;
     border-radius: 10px;
+    transition: 1s;
+    animation: leftside 1s forwards;
+    position: relative;
 }
 /* BOX-8 */
 .Box-8{
@@ -495,9 +565,36 @@ outline: 1px dotted rgb(254, 174, 188);
     gap: 55px;
     margin-top: 7px;
     margin-bottom: 5px;
+   
 }
 .Box-8 .flex img{
     width: 530px;
+     
+}
+.Box-8 .program1 img{
+    position: relative;
+    animation: rightside 0.5s ease-out forwards;
+}
+.Box-8 .program1 .text {
+    position: relative;
+     animation: leftside 0.5s ease-out forwards;
+}
+
+.Box-8 .program2 .text {
+    position: relative;
+     animation: rightside 0.5s ease-out forwards;
+}
+.Box-8 .program2 img{
+    position: relative;
+    animation: leftside 0.5s ease-out forwards;
+}
+.Box-8 .program3 .text {
+    position: relative;
+     animation: rightside 0.5s ease-out forwards;
+}
+.Box-8 .program3 img{
+    position: relative;
+    animation: leftside 0.5s ease-out forwards;
 }
 .Box-8 .flex img:hover{
     filter: grayscale(4);
@@ -650,8 +747,9 @@ outline: 1px dotted rgb(254, 174, 188);
     align-items: center;
     justify-content: center;
     gap: 7px;
-  
+     
 }
+
 .Box-11 h2{
      width: 44%;
      height: 55px;
@@ -660,6 +758,11 @@ outline: 1px dotted rgb(254, 174, 188);
     background-color: rgba(0, 0, 0, 0.5);
     color: #f9e603;
     text-shadow: 2px 2px 5px black;
+    position: relative;
+    
+    animation: upside 1s forwards;
+  
+    
 }
 
 .Box-11 > p{
@@ -671,6 +774,10 @@ outline: 1px dotted rgb(254, 174, 188);
     background-color: #333333d3;
     color: white;
     text-shadow: 2px 2px 5px black;
+   position: relative;
+    
+    animation: upside 1s forwards;
+  
 }
 .Box-11  form{
     width: 44%;
@@ -680,8 +787,12 @@ outline: 1px dotted rgb(254, 174, 188);
     align-items: center;
     justify-content: flex-start;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)) ;
-    
     gap: 10px;
+    position: relative;
+    
+    animation: upside 1s forwards;
+  
+    
 }
 
 
@@ -741,13 +852,16 @@ outline: 1px dotted rgb(254, 174, 188);
 .Box-11 form .checkbox #checkbox span img{
     width: 33px;
 } 
+.Box-11 form .checkbox #checkbox span h6{
+     color: #535252da;
+} 
 .Box-11 form .checkbox #checkbox span p{
     font-size: 9px;
-    color: #333333;
+     color: #535252da;
 } 
 .Box-11 form .checkbox #checkbox span p a{
     text-decoration: none;
-    color: #333333;
+     color: #535252da;
 }
 .Box-11 form .checkbox #checkbox span p a:hover{
     text-decoration: underline;
@@ -806,5 +920,322 @@ outline: 1px dotted rgb(254, 174, 188);
     background-position: 50% 25%;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 65px;
+    padding-left: 5px;
    
+}
+
+.footer .footer-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+.footer .footer-1 .links{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer  h2{
+    color: #f9e603
+}
+
+.footer .footer-1 .links #link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    line-height: 30px;
+    
+}
+.footer .footer-1 .links #link .link-1{
+    width: 150px;
+    font-size: 19px;
+    padding-bottom: 24px;
+}
+.footer .footer-1 .links #link .link-2{
+    width: 150px;
+    font-size: 19px;
+    
+}
+.footer .footer-1 .links #link ul{
+    list-style-type: none;
+    color: white;
+}
+.footer .footer-1 .links #link a{
+    text-decoration: none;
+    color: white;
+     width: 150px;
+    
+}
+
+.footer .footer-1 .letter{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:20px ;
+}
+.footer .footer-1 .letter >p{
+    color: white;
+    font-size: 19px;
+    text-align: justify;
+    width: 90%;
+    line-height: 28px;
+}
+.footer .footer-1 .letter input{
+    width: 98%;
+    height: 40px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+}
+
+.footer .footer-1 .letter #checkbox{
+    text-align: center;
+    width: 76%;
+    height: 70px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 4px 10px;
+   
+    
+}
+.footer .footer-1 .letter #checkbox #check{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer .footer-1 .letter span input{
+        width: 28px;
+        border-radius: none;
+        text-align: start;
+        
+    }
+.footer .footer-1 .letter span input:hover{
+        
+        border: 1px solid #33333369;
+    }
+
+.footer .footer-1 .letter #checkbox span img{
+    width: 33px;
+} 
+.footer .footer-1 .letter #checkbox span h6{
+    color: #535252da;
+}
+.footer .footer-1 .letter #checkbox span p{
+    font-size: 9px;
+     color: #535252da;
+} 
+.footer .footer-1 .letter #checkbox span p a{
+    text-decoration: none;
+    color: #535252da;
+}
+.footer .footer-1 .letter #checkbox span p a:hover{
+    text-decoration: underline;
+}
+
+.footer .footer-1 .letter .btn{
+    background-color: #f9e603;
+    font-size: 16px;
+    border-radius: 20px;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.footer .footer-1 .letter .circle{
+    
+     width: 30px;
+     height: 30px;
+     background-color: white;
+    color:rgb(51, 51, 51);
+    margin: 1px;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 7px;
+}
+.footer .footer-1 .letter .circle:hover{
+    cursor: pointer;
+    background-color: #d3d0d0;
+}
+
+.footer .footer-1 .blog{
+    width: 380px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+.footer .footer-1 .blog div{
+    border-bottom: 1px solid white;
+    padding: 0px 0px 15px 2px;
+     color:  white;
+    font-size: 17px;
+    width: 380px;
+    
+}
+.footer .footer-1 .blog #work p{
+    width: 320px;
+}
+.footer .footer-1 .blog #img{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 20px;
+    
+}
+.footer .footer-1 .blog  #img img{
+    width: 70px;
+    
+}
+.footer .footer-1 .blog #img p{
+    width: 250px;
+}
+
+.footer .footer-2{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 57px;
+    gap: 38%;
+    padding-right: 130px;
+
+}
+.footer .footer-3{
+ display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    }
+.footer .footer-3 .text{
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    width: 80%;
+    text-align: justify;
+    gap: 10px;
+    
+}
+
+.footer .footer-3 .text h2{
+    color: white;
+    
+}
+
+.footer .footer-3 .text p{
+    font-size: 19px;
+    line-height: 30px;
+}
+
+
+.message{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px ;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(14, 14, 244, 0.737);
+    color: white;
+    cursor: pointer;
+}
+.message #msg{
+     padding: 13px 14px 7px 14px;
+    /* color: #01adf0; */
+    font-weight: bold;
+    font-size: 33px;
+    transition: 0.6s ease;
+}
+
+/* Animations Functions */
+@keyframes rotation {
+    from{
+        rotate: 0deg;
+        
+    }
+    to{
+        rotate: 180deg;
+        
+    }
+    
+}
+
+@keyframes rev {
+    from{
+        rotate: 180deg;
+    }
+    to{
+        rotate: 0deg;
+        
+    }
+    
+}
+
+@keyframes leftside {
+    from{
+        /* position: relative; */
+        right: -150px;
+        opacity: 0.4;
+    }
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+    
+}
+@keyframes rightside {
+    from{
+        /* position: relative; */
+        left: -150px;
+        opacity: 0.4;
+    }
+    to{
+        left: 0px;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes upside {
+    from{
+        position: relative;
+        bottom: -100px;
+        opacity: 0.4;
+    }
+    to{
+        bottom: 0px;
+        opacity: 1;
+    }
+    
 }
