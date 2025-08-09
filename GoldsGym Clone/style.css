@@ -65,6 +65,7 @@
     padding: 2px 30px;
     gap: 200px;
     position: sticky;
+    top: 0;
     
    
 }
@@ -87,7 +88,7 @@
 
     width: 100%;
 }
-.navBar .nav2 .info ul li{
+.navBar .nav2 .info > ul  li{
     height: 87px;
     padding: 0px 3px;
   
@@ -107,21 +108,87 @@ outline: 1px dotted rgb(254, 174, 188);
 .navBar .nav2 .info ul .arrow span{
     font-size: 10px;
     margin: 0px 4px;
+    transition: 0.5s;
 }
+.navBar .nav2 .info ul .arrow > .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    display: none;
+}
+.navBar .nav2 .info ul .arrow > .flex{
+    width: 14.7%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    
+}
+.navBar .nav2 .info ul .arrow > .flex ul{
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    background-color: white;
+    justify-content: flex-start;
+    text-align: left;
+}
+.navBar .nav2 .info ul .arrow > .flex ul li{
+    width: 95%;
+    height: auto;
+    padding: 4px;
+    text-align: left;
+    display: flex;
+    align-items: left;
+    justify-content: start;
+    font-size: 18px;
+
+}
+
+.navBar .nav2 .info ul .arrow .hover1{
+    position: absolute;
+     top: 90px;
+        left: 311px;
+     background-color: white;
+     }
+.navBar .nav2 .info ul .arrow .hover2{
+    position: absolute;
+    top: 90px;
+    left: 28%;
+     background-color: white;
+     }
+.navBar .nav2 .info ul .arrow .hover3{
+    position: absolute;
+    top: 90px;
+    left: 45%;
+     background-color: white;
+     }
+.navBar .nav2 .info ul .arrow .hover4{
+    position: absolute;
+    top: 90px;
+    left: 51.6%;
+     background-color: white;
+     }
+.navBar .nav2 .info ul .arrow .hover5{
+    position: absolute;
+    top: 90px;
+    right: 8.2%;
+     background-color: white;
+     }
 .navBar .nav2 .info ul .arrow:hover{
     outline: 1px dotted rgb(254, 174, 188);
     
     span{
-
-        animation: rotation 0.5s forwards;
+        transform: rotate(180deg);
+      
     }
+    .flex{
+        display: block;
+       
+    }
+   
 }
-
-
-
-
-
-
 .navBar .nav2 .info ul .Trial{
     height: 87px;
     width: 98px;
@@ -141,9 +208,12 @@ outline: 1px dotted rgb(254, 174, 188);
    background-color: #f9e603; 
    border-radius: 40px;
   
- 
-
 }
+
+.navBar .nav2 .info ul .Trial div:hover{
+        background-color: black;
+        color: white;
+    }
 /* MAIN  */
 .main{
     width: 100%;
@@ -327,6 +397,9 @@ outline: 1px dotted rgb(254, 174, 188);
     justify-content: center;
     gap: 20px;
     padding: 2px 20px;
+
+    transition: 0.5s ;
+    
     
 }
 
@@ -342,9 +415,9 @@ outline: 1px dotted rgb(254, 174, 188);
 
 .Box-4 .types .flex:hover{
     cursor: pointer;
-  
-    transform: scale(1.1,1.1);
-    transition: 0.5s ;
+       transform: scale(1.1,1.1);
+   
+   
 }
 
 
@@ -932,7 +1005,7 @@ outline: 1px dotted rgb(254, 174, 188);
     text-align: center;
     gap: 20px;
     padding-top: 65px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
    
 }
 
@@ -1171,7 +1244,7 @@ outline: 1px dotted rgb(254, 174, 188);
     width: 60px ;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(14, 14, 244, 0.737);
+    background-color: #01adf0;
     color: white;
     cursor: pointer;
 }
@@ -1184,28 +1257,7 @@ outline: 1px dotted rgb(254, 174, 188);
 }
 
 /* Animations Functions */
-@keyframes rotation {
-    from{
-        rotate: 0deg;
-        
-    }
-    to{
-        rotate: 180deg;
-        
-    }
-    
-}
 
-@keyframes rev {
-    from{
-        rotate: 180deg;
-    }
-    to{
-        rotate: 0deg;
-        
-    }
-    
-}
 
 @keyframes leftside {
     from{
