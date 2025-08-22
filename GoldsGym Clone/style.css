@@ -459,10 +459,17 @@ outline: 1px dotted rgb(254, 174, 188);
     position: relative;
     /* right: -500px; */
     transition: 1s;
-    animation: leftside 1s forwards;
+    /* animation: leftside 1s forwards; */
+
+      opacity: 0;
+  /* transform: translateY(20px); */
+ 
+  transition: all 0.8s ease-out;
     
 }
-
+ /* Animation in button  */
+.show.button { opacity: 1; transform: translateX(0); }
+.button{ transform: translateX(100px);}
 /* BOX-6 */
 .Box-6{
     width: 100%;
@@ -578,17 +585,25 @@ outline: 1px dotted rgb(254, 174, 188);
     font-weight: bolder;
     text-indent: 10px;
     position: relative;
-    animation: rightside 0.8s forwards    ;
+    /* animation: rightside 0.8s forwards    ; */
+    opacity: 0;
+  /* transform: translateY(20px); */
+  
+  transition: all 0.6s ease-out;
 
 }
 
 .Box-7 .location .list ul {
     position: relative;
-    animation: rightside 1s forwards    ;
+    /* animation: rightside 1s forwards    ; */
     list-style-type: none;
      /* word-spacing: 4px; */
     letter-spacing: 0.5px;
     line-height: 31px;
+    opacity: 0;
+  /* transform: translateY(20px); */
+  
+  transition: all 0.8s ease-out;
     
 }
 .Box-7 .location .list ul li{
@@ -600,10 +615,20 @@ outline: 1px dotted rgb(254, 174, 188);
 .Box-7 .location img{
     width: 370px;
     border-radius: 10px;
-    transition: 1s;
-    animation: leftside 1s forwards;
+    /* transition: 1s;
+    animation: leftside 1s forwards; */
     position: relative;
+      opacity: 1;
+  /* transform: translateY(20px); */
+  
+  transition: all 0.8s ease-out;
 }
+.pic {  transform: translateX(100px);}
+/* Animation  */
+.show#list1 ,.show#list2  { opacity: 1; transform: translateX(0); }
+.show.pic { opacity: 1; transform: translateX(0); }
+#list1,#list2  { transform: translateX(-100px); }
+
 /* BOX-8 */
 .Box-8{
     width: 100%;
@@ -649,31 +674,7 @@ outline: 1px dotted rgb(254, 174, 188);
     width: 530px;
      
 }
-.Box-8 .program1 img{
-    position: relative;
-    animation: rightside 0.5s ease-out forwards;
-}
-.Box-8 .program1 .text {
-    position: relative;
-     animation: leftside 0.5s ease-out forwards;
-}
 
-.Box-8 .program2 .text {
-    position: relative;
-     animation: rightside 0.5s ease-out forwards;
-}
-.Box-8 .program2 img{
-    position: relative;
-    animation: leftside 0.5s ease-out forwards;
-}
-.Box-8 .program3 .text {
-    position: relative;
-     animation: rightside 0.5s ease-out forwards;
-}
-.Box-8 .program3 img{
-    position: relative;
-    animation: leftside 0.5s ease-out forwards;
-}
 .Box-8 .flex img:hover{
     filter: grayscale(4);
 }
@@ -689,6 +690,19 @@ outline: 1px dotted rgb(254, 174, 188);
     color: #333333f8;
     line-height: 28px;
 }
+
+/* ANIMATION */
+.show.leftToright  { opacity: 1; transform: translateX(0); }
+.show.rightToleft { opacity: 1; transform: translateX(0); }
+
+.leftToright  { opacity: 0;
+  
+  transition: all 0.8s ease-out;
+    transform: translateX(-100px); }
+.rightToleft {opacity: 0;
+ 
+  transition: all 0.8s ease-out;
+     transform: translateX(100px); }
 /* BOX-9 */
 .Box-9{
     width: 100%;
@@ -827,7 +841,14 @@ outline: 1px dotted rgb(254, 174, 188);
     gap: 7px;
      
 }
-
+.Box-11 .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     gap: 7px;
+}
 .Box-11 h2{
      width: 44%;
      height: 55px;
@@ -843,7 +864,7 @@ outline: 1px dotted rgb(254, 174, 188);
     
 }
 
-.Box-11 > p{
+.Box-11 .form > p{
      width: 44%;
      height: 80px;
      text-align: center;
@@ -950,6 +971,16 @@ outline: 1px dotted rgb(254, 174, 188);
     border-radius:50px;
     font-weight: bolder;
     cursor: pointer;
+}
+
+
+/* Animation on box-11 */
+.show.form    { opacity: 1; transform: translateY(0); }
+.form{
+     transform: translateY(100px);
+       opacity: 0;
+  /* transform: translateY(20px); */
+  transition: all 0.8s ease-out;
 }
 /* BOX-12 */
 .Box-12{
@@ -1247,6 +1278,10 @@ outline: 1px dotted rgb(254, 174, 188);
     background-color: #01adf0;
     color: white;
     cursor: pointer;
+   
+}
+.message:hover{
+    box-shadow: 0px 0px 7px 3px rgb(136, 135, 135);
 }
 .message #msg{
      padding: 13px 14px 7px 14px;
@@ -1296,3 +1331,4 @@ outline: 1px dotted rgb(254, 174, 188);
     }
     
 }
+
