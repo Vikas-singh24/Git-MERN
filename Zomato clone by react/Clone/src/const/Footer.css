@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(231, 229, 229, 0.293);
+}
+
+.footer .foot1{
+    padding-top: 3rem;
+    width: 72.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+
+.footer .foot1 .zoma #footLogo{
+ width: 9rem;
+}
+
+.footer .foot1  .lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+.footer .foot1  .lang .footBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(207, 207, 207);
+    background-color: transparent;
+    gap: 0.25rem;
+   
+}
+
+.footer .foot1  .lang .footBox p{
+    font-size: 1.1rem;
+}
+
+.footer .foot1  .lang .language #global{
+    font-size: 1.28rem;
+}
+
+/* Foot 2 start  */
+
+.footer .foot2{
+    margin-top: 3rem;
+    width: 72.1%;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    
+    /* position: relative; */
+    
+
+}
+
+.footer .foot2 .list{
+    /* position: relative; */
+    width: 100%;
+    /* -webkit-box-flex: 0; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 21%;
+    padding: 0px;
+}
+.footer .foot2 .list h4{
+ letter-spacing: 0.1rem;
+ word-spacing: 0.1rem;
+ margin-bottom: 1rem;
+ font-weight: normal;
+
+}
+
+.footer .foot2 .app{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.footer .foot2 .list ul{
+    color: #696969;
+    list-style: none;
+    
+}
+
+.footer .foot2 .list ul li{
+    line-height: 1.1rem;
+    font-size: 1rem;
+    width: 100%;
+   cursor: pointer;
+    margin: 0.5rem 0px;
+}
+.footer .foot2 .list ul li:hover{
+    color: rgb(28,28,28);
+}
+
+.footer .foot2 .social .platforms{
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+.footer .foot2 .social .platforms > p{
+    background-color: black;
+    color: white;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    font-size: 0.9rem;
+    padding-top: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer .foot2 .social .storeLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0.8rem;
+    color: white;
+}
+.footer .foot2 .social .storeLink .socialBox{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 18, 47, 0.873);
+    color: white;
+    border-radius: 0.4rem;
+    gap: 0.2rem;
+    width: 60%;
+    height: 6vh;
+    cursor: pointer;
+}
+.footer .foot2 .social .storeLink .socialBox .apple{
+    font-size: 1.6rem;
+}
+
+.footer .foot2 .social .storeLink .socialBox .footText p{
+    font-size: 0.58rem;
+}
+.footer .foot2 .social .storeLink .socialBox .footText h3{
+    font-size: 1.1rem;
+}
+
+/* foot 3 start  */
+
+.footer .foot3{
+    width: 72.1%;
+}
+.footer .foot3 hr{
+    color: #e7e5e5a5;
+}
+.footer .foot3 p{
+    margin-top: 1.3rem;
+    width: 100%;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: #696969;
+}

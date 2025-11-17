@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar */
+.navBar{
+    width: 100%;
+    height: 24vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 2px;
+    padding-left: 62px;
+  border-bottom: 1px solid rgba(231, 229, 229, 0.648);
+    padding-bottom: 5px;
+}
+
+
+/* navBar 1 */
+
+.navBar .nav1{
+    width: 80%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+}
+.navBar .nav1 .searchBar{
+    width: 59%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(231, 229, 229, 0.493);
+    border-radius: 9px;
+    box-shadow: 1px 1px 6px 1px rgba(231, 229, 229, 0.648) ;
+    
+}
+
+.navBar .nav1 .searchBar .place{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.navBar .nav1 .searchBar .bar{
+     display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.navBar .nav1 .searchBar #loc{
+    width: 15% ;
+    height: 7vh;
+    align-items: center;
+    border: none;
+    padding-right: 8px;
+    padding-top: 14px;
+    padding-left: 6px;
+    outline: none;
+    
+}
+.navBar .nav1 .searchBar #arrow{
+    width: 13% ;
+    height: 7vh;
+    align-items: center;
+    font-size: 1.5rem;
+    border: none;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-left: 1px;
+    outline: none;
+   cursor: pointer;
+    
+}
+.navBar .nav1 .searchBar #location{
+    height: 7vh;
+    width: 80%;
+    font-size: 0.9rem;
+    outline: none;
+    padding: 3px;
+    border: none;
+    
+}
+
+
+
+.navBar .nav1 .searchBar .bar{
+    width: 68%;
+}
+.navBar .nav1 .searchBar .bar #scope{
+    width: 10% ;
+     height: 7vh;
+    align-items: center;
+    font-size: 0.9rem;
+    border: none;
+    color: rgb(103, 102, 102);
+    padding-right: 6px;
+    padding-top: 1px;
+    padding-left: 7px;
+    outline: none;
+    
+    
+    
+}
+
+.navBar .nav1 .searchBar .bar #search{
+    height: 7vh;
+    width: 100% ;
+    font-size: 1.05rem;
+    outline: none;
+     border:none;
+    padding: 3px;
+    font-size: 0.9rem;
+    border-radius: 0px 7px 7px 0px;
+    
+}
+
+/* Log in / Sign up  */
+ .navBar .nav1 .btn{
+    margin-left: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px
+ }
+.navBar .nav1 .btn button{
+    height: 7vh ;
+    background-color: white;
+    border:  none;
+    outline: none;
+    padding: 6px;
+    font-size: 1.2rem;
+    color: rgba(105, 105, 105, 0.689);
+    cursor: pointer;
+}
+
+
+
+/* Nav 2 */
+.navBar .nav2{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 18px;
+    padding-top: 1px;
+}
+.navBar .nav2 .link{
+    text-decoration: none;
+}
+.navBar .nav2 .flex{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    gap: 8px;
+    margin: 3px 8px;
+    padding: 4px 10px 8px 10px;
+    
+    
+
+}
+.navBar .nav2 .flex h1{
+    font-size: 20px;
+    color: #696969;
+}
+.navBar .nav2 .flex .icons {
+   width: 60px;
+   height: 60px;
+
+    border-radius: 50%;
+    padding-top: 13px;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+
+.navBar .nav2 .icons img{
+    width: 31px;
+}
+
+
+             
+            

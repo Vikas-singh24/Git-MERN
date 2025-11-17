@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.delivery{
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.delivery .box1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    }
+.delivery .box1 .options{
+    width: 72.1%;
+
+    height: 15vh;
+    
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: red; */
+    gap: 12px;
+   
+}
+
+.delivery .box1 .options .option{
+    /* padding: 5px;
+    border-radius: 7px;
+    font-size: 1.1rem; */
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+        box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex
+;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    cursor: pointer;
+    /* height: 100%; */
+    font-size: 0.9rem;
+    
+}
+
+.delivery .box1 .options .rating{
+    padding: 0.18rem;
+}
+.delivery .box1 .options .rating span{
+    margin-left: 0.2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    padding-top: 0.2rem;
+  
+}
+.delivery .box1 .options .option:hover{
+   background-color:  rgba(231, 229, 229, 0.293);
+}
+
+
+/* box 2 start  */
+.delivery .box2{
+    margin-top: -0.2rem;
+    width: 100%;
+
+   background-color: rgba(231, 229, 229, 0.293);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+
+.delivery .box2 .menu{
+    width: 72.1%;
+     display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+   /* align-items: center; */
+   /* justify-content: center; */
+}
+.delivery .box2 .menu .foods {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2.2rem;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.delivery .box2 .menu h1{
+    margin-top: 2.7rem;
+     
+}
+
+.delivery .box2 .menu .menuBox{
+    width: 100% ;
+    margin-top: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.delivery .box2 .menu .menuBox .btn{
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    width: 35px;
+    height:35px ;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+}
+.delivery .box2 .menu .menuBox .prev{
+    left:  -0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+.delivery .box2 .menu .menuBox .next{
+    right: -0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+.delivery .box2 .menu .menuBox .btn:hover{
+    background-color: rgb(248,248,248);
+    
+    
+}
+.delivery .box2 .menu .foods .food1 img{
+    width: 9.6rem;
+   
+}
+
+.delivery .box2 .menu .foods .food1 p{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #363636;
+    margin-bottom: 0.5rem;
+    
+}
+.delivery .box2 .menu .foods::-webkit-scrollbar {
+  display: none;
+}
+/* box 3 start  */
+
+.delivery .box3 {
+    width: 72.1%;
+
+}
+.delivery .box3 .shops{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.delivery .box3 .shops .shopBox{
+   width: 100% ;
+    margin-top: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+.delivery .box3 .shops .shopBox .btn{
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    width: 35px;
+    height:35px ;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.delivery .box3 .shops .shopBox .prev{
+     left:  -0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+.delivery .box3 .shops .shopBox .next{
+     right:  -0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+.delivery .box3 .shops .shopBox .btn:hover{
+    background-color: rgb(248,248,248);
+    
+    
+}
+
+.delivery .box3 .shops .shopList{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.8rem ;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.delivery .box3 .shops .shopList::-webkit-scrollbar{
+    display: none;
+}
+.delivery .box3 .shops .shopList .shopName{
+    /* background-color: pink; */
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+.delivery .box3 .shops .shopList .shopName .shopImg{
+    border: 1px solid rgba(231, 229, 229, 0.293);;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-top: 0.3rem;
+    box-shadow: 1px 4px 8px 4px rgba(231, 229, 229, 0.393);
+}
+.delivery .box3 .shops .shopList .shopName .shopImg #img{
+    /* width: 10rem; */
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    
+}
+
+.delivery .box3 .shops .shopList .shopName p{
+    margin: 0.8rem 0px 0.3rem 0px;
+     font-size: 1.2rem;
+}
+.delivery .box3 .shops .shopList .shopName span{
+   
+     font-size: 1.2rem;
+     color: #1c1c1ce6;
+}
+
+/* Box 4 start  */
+.delivery .box4 {
+    width: 72.1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.delivery .box4   .delBox {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+   
+   
+}
+
+.delivery .box4   .delBox .delBoxes{
+    width: 345px;
+    height: 342px;
+    /* border: 2px solid red; */
+    /* display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center; */
+    border-radius: 15px;
+    padding: 10px;
+    border: 0.1rem solid transparent;
+    margin-bottom: 9px;
+    
+
+}
+
+.delivery .box4   .delBox .delBoxes:hover{
+    border: 0.1rem solid rgb(232, 232, 232);
+   box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.6rem;
+    box-sizing: border-box
+}
+.delivery .box4   .delBox .delBoxes .delPic{
+     width: 320px;
+    height: 248px;
+    transform: scale(1.05rem,2rem);
+    /* border: 5px solid green; */
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.delivery .box4   .delBox .delBoxes .delPic > p{
+    position: absolute;
+    color: white;
+    top: 0.9rem;
+    left: 0.8rem;
+    width: max-content;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.7rem);
+    border-radius: 0.2rem;
+    padding: 0px 0.5rem;
+    z-index: 1;
+    font-weight: normal;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    opacity: 0.7;
+}
+.delivery .box4   .delBox .delBoxes .delPic #pic{
+    width: 320px;
+    height: 248px;
+    border: 2px solid rgb(35, 10, 10);
+    border-radius: 15px;
+    transform: scale(1.06,2);
+
+}
+
+.delivery .box4   .delBox .delBoxes .delPic h1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+    position: absolute;
+    color: white;
+    /* text-align: center; */
+    font-size: 1rem;
+    bottom: 12px;
+    padding: 1px 5px;
+    height: 3vh;
+    /* background: linear-gradient(90deg,blue 25%,rgba(38, 74, 233, 0.664) 10%,blue 60%,rgba(0, 0, 255, 0.2)); */
+    background:  #256FEF
+
+}
+.delivery .box4   .delBox .delBoxes .delPic h1 #dic{
+    font-size: 19px;
+    width: 19px;
+    /* padding-top: 1px; */
+}
+.delivery .box4   .delBox .delBoxes .delText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 7px ;
+    cursor: pointer;
+}
+.delivery .box4   .delBox .delBoxes .delText .below{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery .box4   .delBox .delBoxes .delText .below > button{
+    background-color: #267E3E;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding:2px 4px ;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.delivery .box4   .delBox .delBoxes .delText .below > button > .star{
+    padding-top: 2px;
+    zoom: 1;
+    /* font-size: 13px; */
+}
+.delivery .box4   .delBox .delBoxes .delText .below >h3{
+    color: rgb(28, 28, 28);
+}
+.delivery .box4   .delBox .delBoxes .delText .below > h4{
+   color: rgba(105,105,105);
+}
+.delivery .box4   .delBox .delBoxes .delText .below > h5{
+   color: rgba(156,156,156);
+   font-size: 15px;
+}
+.delivery .box4   .delBox .delBoxes .delText .below > p{
+   color: rgba(36,36,36);
+   width: 100%;
+   text-align: end;
+   font-size: 15px;
+}

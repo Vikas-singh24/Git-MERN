@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dining{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* box 1 start  */
+.dining .box1{
+    width: 100%;
+    height: auto;
+    background-color: rgba(231, 229, 229, 0.293);
+
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.dining .box1 .collections{
+    width: 72.1%;
+    /* height: 50vh; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dining .collections > h1{
+    
+    padding: 11px 2px 1px 2px;
+    margin-bottom: 1.7rem;
+}
+
+.dining .collections > p{
+    width: 100%;
+    font-size: 20px;
+    color: rgba(41, 40, 40, 0.862);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dining .collections > p > h4{
+    font-weight: 1;
+}
+.dining .collections > p >span{
+    color: rgb(255, 126, 139);
+    text-align: end;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+.dining .collections > p >span .rightArrow{
+    padding: 5px 0px 0px 0px;
+    font-size: 1.3rem;
+}
+.dining .collections > p >span:hover{
+    color: rgb(224, 53, 70);
+    .rightArrow{
+        color: rgb(255, 126, 139);
+    }
+}
+
+
+.dining .box1 .collections .places {
+    width: 100% ;
+    margin-top: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.dining .box1 .collections .places .btn{
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    width: 35px;
+    height:35px ;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+}
+.dining .box1 .collections .places .prev{
+    left:  -0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+.dining .box1 .collections .places .next{
+    right: -0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+}
+
+.dining .box1 .collections .places .btn:hover{
+    background-color: rgb(248,248,248);
+    
+    
+}
+
+.dining .box1 .collections .places .place{
+  
+   
+    display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 1.2rem;
+  /* padding: 10px; */
+  
+   
+}
+.dining .box1 .collections .places .place::-webkit-scrollbar {
+  display: none;
+}
+.dining .box1 .collections .places .place .card{
+    
+
+    position: relative;
+   width: 16.2rem;
+   height: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.dining .box1 .collections .places .place .card .dark{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+     background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+}
+.dining .box1 .collections .places .place .text{
+    color: rgba(239, 237, 237, 0.882);
+   
+    position: absolute;
+    
+    bottom: 7px;
+    z-index: 2;
+    margin: 0px 0px 4px 5px;
+    
+    padding: 0px 0px 0px 6px;
+}
+.dining .box1 .collections .places .text > h2{
+    font-size: 19px;
+    margin-bottom: 2px;
+
+}
+
+
+.dining .box1 .collections .places .placeImags{
+    
+    border-radius: 7px;
+     width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* box 1 End  */
+
+/* box 2 start  */
+.dining .box2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dining .box2 .options{
+    width: 72.1%;
+
+    height: 15vh;
+    
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: red; */
+    gap: 12px;
+   
+}
+
+.dining .box2 .options .option{
+    /* padding: 5px;
+    border-radius: 7px;
+    font-size: 1.1rem; */
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+        box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex
+;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    cursor: pointer;
+    /* height: 100%; */
+    font-size: 1rem;
+}
+.dining .box2 .options .option:hover{
+   background-color:  rgba(231, 229, 229, 0.293);
+}
+
+.dining .box2 .offer{
+    width: 72.1%;
+    
+    /* height: 40vh; */
+    
+}
+.dining .box2 .offer #off{
+    width: 100%;
+}
+
+/* box 2 Restaurants */
+.dining .box2 .offer > h1{
+    padding: 1rem 0rem ;
+}
+
+.dining .box2 .offer .restaurants {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+   
+}
+
+.dining .box2 .offer .restaurants .restaurantBox{
+    width: 345px;
+    height: 342px;
+    /* border: 2px solid red; */
+    /* display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center; */
+    border-radius: 15px;
+    padding: 10px;
+    border: 0.1rem solid transparent;
+    margin-bottom: 9px;
+    
+
+}
+
+.dining .box2 .offer .restaurants .restaurantBox:hover{
+    border: 0.1rem solid rgb(232, 232, 232);
+   box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.6rem;
+    box-sizing: border-box
+}
+.dining .box2 .offer .restaurants .restaurantBox .restPic{
+     width: 320px;
+    height: 248px;
+    transform: scale(1.05rem,2rem);
+    /* border: 5px solid green; */
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.dining .box2 .offer .restaurants .restaurantBox .restPic > p{
+    position: absolute;
+    color: white;
+    top: 0.9rem;
+    left: 0.8rem;
+    width: max-content;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.7rem);
+    border-radius: 0.2rem;
+    padding: 0px 0.5rem;
+    z-index: 1;
+    font-weight: normal;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    opacity: 0.7;
+}
+.dining .box2 .offer .restaurants .restaurantBox .restPic #pic{
+    width: 320px;
+    height: 248px;
+    border: 2px solid rgb(35, 10, 10);
+    border-radius: 15px;
+    transform: scale(1.06,2);
+
+}
+
+.dining .box2 .offer .restaurants .restaurantBox .restPic h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    bottom: 12px;
+    width: 55%;
+    height: 3vh;
+    /* background: linear-gradient(90deg,blue 25%,rgba(38, 74, 233, 0.664) 10%,blue 60%,rgba(0, 0, 255, 0.2)); */
+    background:  linear-gradient(90deg, rgb(17, 85, 203) 0%, rgb(83, 140, 238) 25%, rgb(17, 85, 203) 50%, rgba(17, 85, 203, 0.8) 80%, rgba(17, 85, 203, 0) 100%);
+    line-height: 24px;
+
+}
+.dining .box2 .offer .restaurants .restaurantBox .restPic h1 #dic{
+    font-size: 19px;
+    width: 19px;
+    /* padding-top: 1px; */
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 7px ;
+    cursor: pointer;
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText .below{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dining .box2 .offer .restaurants .restaurantBox .restText .below > button{
+    background-color: #267E3E;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding:2px 4px ;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText .below > button > .star{
+    padding-top: 2px;
+    zoom: 1;
+    /* font-size: 13px; */
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText .below >h3{
+    color: rgb(28, 28, 28);
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText .below > h4{
+   color: rgba(105,105,105);
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText .below > h5{
+   color: rgba(156,156,156);
+   font-size: 15px;
+}
+.dining .box2 .offer .restaurants .restaurantBox .restText .below > p{
+   color: rgba(36,36,36);
+   font-size: 15px;
+}
+
