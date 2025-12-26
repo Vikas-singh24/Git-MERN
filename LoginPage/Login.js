@@ -44,13 +44,21 @@ loginPass.addEventListener("input", validateLogin);
 
 function validateSignUp() {
     let allFilled = true;
+    let emailValid = true;
+
     signFormInputs.forEach(input => {
         if (input.value.trim() === "") {
             allFilled = false;
         }
+        if (input.type === "email") {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(input.value)) {
+                emailValid = false;
+            }
+        }
     });
 
-    if (allFilled && signPass.value.length > 8) {
+    if (allFilled && signPass.value.length > 8 && emailValid) {
         signBtn.disabled = false;
         signBtn.style.background = "rgba(13, 43, 162, 0.85)";
         signBtn.style.cursor = "pointer";
@@ -58,9 +66,10 @@ function validateSignUp() {
         signBtn.disabled = true;
         signBtn.style.background =
             "linear-gradient(120deg,rgba(21,56,162,0.31),rgba(12,140,182,1))";
-        
+        signBtn.style.cursor = "not-allowed";
     }
 }
+
 
 signFormInputs.forEach(input => {
     input.addEventListener("input", validateSignUp);
