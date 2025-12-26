@@ -11,20 +11,36 @@
      <nav id="Navbar">
         <h1>Let's Chat</h1>
     </nav>
-
+    <div class="mainBox">
     <main id="main">
+        <input type="checkbox" aria-hidden="false" id="check">
         <div class="loginBox">
-
-            <input id="text" type="text" placeholder="Enter Your Id">
+            <form action="" id="loginForm">
+            <label for="check" id="log"> Log In</label>
+            <input id="text" type="text" placeholder="Enter Your Id" >
             <div class="pass">
-                <input id="password" type="password" placeholder="Enter Your password">
-                <button id="hide"> <i id="logo" class="fa-solid fa-eye-slash"></i></button>
+                <input id="password" type="password" placeholder="Enter Your password" >
+                <button id="hide" type="button" class="togglePass" data-target="password"> <i id="logo" class="fa-solid fa-eye-slash"></i></button>
             </div>
+            <h5>Forget Your password?</h5>
             <button id="logIn">Log In</button>
-            
-           
+           </form>
         </div>
+         <div class="signUpBox">
+                <form action="" id="signUpForm">
+                    <label for="check" id="sign"> Sign Up</label>
+                    <input  type="text" placeholder="User Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone No." required>
+                   <div class="pass">
+                <input id="signPassword" type="password" placeholder="Enter Your password" >
+                 <button id="signHide" type="button" class="togglePass" data-target="signPassword"> <i id="logo2" class="fa-solid fa-eye-slash"></i></button>
+            </div>
+                    <button id="signBtn"> Sign Up</button>
+                </form>
+            </div>
     </main>
+    </div>
     <footer id="foot">
         <h4>Made by Vikas Kumar Singh</h4>
         <h5>©copyright</h5>

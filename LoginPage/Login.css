@@ -6,98 +6,250 @@
 
 nav {
     width: 100%;
-    height: 6vh;
-
-    background-color: rgba(13, 162, 65, 0.889);
-
+    height: 64px;
+    background: linear-gradient(90deg, #0b5ed7, #1e88e5);
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 nav h1 {
-    text-align: center;
-    color: rgb(3, 115, 31);
+    color: #eaf2ff;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.mainBox {
+    width: 100%;
+    min-height: calc(100vh - 128px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(
+        159deg,
+        rgba(6, 102, 238, 0.953) 40%,
+        rgba(17, 42, 200, 0.897),
+        rgb(38, 12, 205) 60%
+    );
 }
 
 #main {
-
-    height: 86vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(145, 252, 150, 0.695);
-}
-
-#main .loginBox {
+    width: 100%;
+    max-width: 380px;
+    min-height: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(224, 230, 221, 0.771);
-    width: 25%;
-    height: 30vh;
-    gap: 10px;
-    border-radius: 20px;
+    justify-content: start;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem;
+    padding-top: 4rem;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    position: relative;
+}
+
+#main #check {
+    display: none;
+}
+
+#main .loginBox {
+    width: 100%;
+    height: 100%;
+}
+
+#main .loginBox #loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1.4rem;
+}
+
+#main .loginBox #loginForm label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(243, 246, 251);
+    cursor: pointer;
+    margin: 0rem 0 1.7rem 0;
+    transition: 0.8s ease-in-out;
 }
 
 #main .loginBox #text {
     width: 90%;
-    height: 5vh;
+    height: 42px;
     border-radius: 5px;
     outline: none;
     border: none;
-    padding: 5px;
-
-
+    padding: 8px;
 }
 
 #main .loginBox .pass {
     width: 100%;
-
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #main .loginBox .pass #password {
     width: 80%;
-    height: 5vh;
+    height: 42px;
     outline: none;
     border: none;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px 0 0 5px;
 }
 
 #main .loginBox .pass #hide {
     width: 10%;
-    height: 5vh;
+    height: 42px;
     outline: none;
     border: none;
-    background-color: white;
+    background-color: #fff;
     border-radius: 0 5px 5px 0;
-    color: rgb(136, 133, 133);
+    color: #777;
     cursor: pointer;
 }
 
-#main .loginBox #logIn {
+#loginForm h5 {
+    color: rgb(17, 16, 108);
+    cursor: pointer;
+}
+
+#main .loginBox #loginForm #logIn {
     width: 90%;
-    height: 5vh;
+    height: 42px;
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: lightgreen;
-    color: rgb(255, 255, 255);
+    background: linear-gradient(120deg, #2563eb, #38bdf8);
+    color: #fff;
+    transition: 0.3s ease;
 }
 
-#foot{
+#main .signUpBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(84%);
+    transition: transform 0.8s ease-in-out;
+}
+
+#main .signUpBox #signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    background: rgb(41, 122, 243);
+    padding-bottom: 3rem;
+    border-radius: 60% / 10%;
+    height: 100%;
+}
+
+#signUpForm #sign {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 1.8rem;
+    cursor: pointer;
+    transform: scale(0.6);
+    transition: 0.8s ease-in-out;
+    color: rgb(11, 14, 188);
+}
+
+#signUpForm > input {
+    width: 90%;
+    height: 42px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#signUpForm .pass {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #signUpForm .pass #signPassword {
+    width: 90%;
+    height: 42px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 8px 0 0 5px;
+}
+
+#main #signUpForm .pass #signHide {
+    width: 10%;
+    height: 42px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    color: #777;
+    cursor: pointer;
+}
+
+#signUpForm #signBtn {
+    width: 90%;
+    height: 42px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #2563eb, #38bdf8);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#check:checked ~ .signUpBox {
+
+    transform: translateY(14%);
+}
+
+#check:checked ~ .signUpBox #sign {
+    
+    transform: scale(1);
+}
+
+#check:checked ~ .loginBox #log {
+    transform:translateY(-2rem) scale(0.6)  ;
+}
+
+#foot {
     text-align: center;
-    background-color:  rgba(13, 162, 65, 0.889);
-    height: 8vh;
-    padding-top: 10px;
-    color: rgb(20, 98, 43);
+    background-color: rgba(13, 48, 162, 0.9);
+    height: 64px;
+    padding-top: 12px;
+    color: #c7d2fe;
+}
+
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 1.3rem;
+    }
+
+    #main {
+        max-width: 100%;
+        min-height: 480px;
+        border-radius: 1rem;
+        
+    }
+
+    #loginForm label,
+    #sign {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #main {
+        max-width: 420px;
+    }
 }
