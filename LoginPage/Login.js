@@ -66,7 +66,7 @@ function validateSignUp() {
         signBtn.disabled = true;
         signBtn.style.background =
             "linear-gradient(120deg,rgba(21,56,162,0.31),rgba(12,140,182,1))";
-        signBtn.style.cursor = "not-allowed";
+        
     }
 }
 
